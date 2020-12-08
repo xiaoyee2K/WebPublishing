@@ -1,0 +1,108 @@
+/*register form*/
+body{
+	margin:0;
+	padding: 0;
+	background: url(h1.jpg);
+	background-position: center center;
+	background-size: 100%;
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+}
+
+.profile{
+	width: 350px;
+	height: 550px;
+	background: transparent;
+	top: 50%;
+	left: 30%;
+	position:absolute;
+	transform: translate(-50%,-50%);
+	box-sizing: border-box;
+	padding: 0px 30px;
+	box-shadow: 0 15px 25px;
+	border-style: inset;
+}
+
+h1{
+	padding: 0px 10px 10px;
+	text-align: center;
+	font-size: 30px;
+color:#f5bf5b;
+	font-family: 'Architects Daughter', cursive;
+}
+
+.profile input[type="text"], input[type="password"]
+{
+	border: none;
+	border-bottom: 1px solid #fff;
+	background: transparent;
+	outline: none;
+	color: #fff;
+	font-size: 15px;
+	
+}
+
+.profile p{
+	padding:0;
+	font-weight:bold;
+	font-size: 19px;
+color:#ffa36e;
+}
+
+.profile input{
+	width:100%;
+	margin-bottom: 15px;
+}
+
+.profile input[type="submit"]
+{
+	border:none;
+	outline: solid;
+	outline-color: #A66506; 
+	height: 40px;
+	background: transparent;
+	color: #fff;
+	font-size: 19px;
+}
+
+.profile input[type="submit"]:hover
+{
+	cursor: pointer;
+	background: #EECA97;
+	color: #000;
+}
+
+.profile a{
+	font-size: 15px;
+	line-height: 20px;
+	color: #fc3b14;
+	text-align: center;
+	padding: 10px 10px 80px;
+}
+
+.profile a:hover
+{
+	color: #E8FE43;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

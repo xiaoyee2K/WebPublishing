@@ -1,0 +1,115 @@
+/*password reset*/
+body{
+	margin:0;
+	padding: 0;
+	background: url(h1.jpg);
+	background-position: center center;
+	background-size: 100%;
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+}
+.pass{
+	width: 350px;
+	height: 380px;
+	background: transparent;
+	top: 50%;
+	left: 30%;
+	position:absolute;
+	transform: translate(-50%,-50%);
+	box-sizing: border-box;
+	padding: 0px 30px;
+	box-shadow: 0 15px 25px;
+	border-style: inset;
+}
+h1{
+	padding: 0px 10px 10px;
+	text-align: center;
+	font-size: 30px;
+}
+
+.pass input[type="text"]
+{
+	border: none;
+	border-bottom: 1px solid #fff;
+	background: transparent;
+	outline: none;
+	color: #fff;
+	font-size: 15px;
+
+}
+
+.pass input[type="submit"]
+{
+	border:none;
+	outline: solid;
+	outline-color: #A66506; 
+	height: 40px;
+	background: transparent;
+	color: #fff;
+	font-size: 19px;
+}
+
+.pass input[type="submit"]:hover
+{
+	cursor: pointer;
+	background: #EECA97;
+	color: #000;
+}
+
+.pass input{
+	width:100%;
+	margin-bottom: 15px;
+}
+
+.pass p{
+	padding: 0px 10px 10px;
+	font-weight:bold;
+	font-size: 30px;
+	font-family: 'Architects Daughter', cursive;
+	color:#7788a3;
+	text-align: center;
+}
+
+.pass a{
+	font-size: 16px;
+	line-height: 20px;
+	color: #fc3b14;
+	text-align: center;
+	padding: 10px 10px 80px;
+}
+
+.pass a:hover
+{
+	color: #edb94a;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
