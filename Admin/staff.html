@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html>
+<head><title>Staff</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+<link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+
+<link rel="stylesheet" href="admin_style.css">
+</head>
+
+<body>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+
+<div class="admin-wrapper">
+	<div class="left-sidebar">
+	<br>
+	
+		<a href="#" class="home-title"> &nbsp;  The Drink House &nbsp;&nbsp;&nbsp;</a>
+		<div class="home-title pb-3">
+		<br>
+                <img src="images/cust4.jpeg" width="50" class="rounded-circle mr-3">
+                <a href="#" class="text-white">Staff member </a>
+        <br>
+		
+		</div>
+		<ul>
+		<br>
+		<br>
+			<li ><a href="admin index.html" ><ion-icon name="home"></ion-icon>&nbsp;  Dashboard</a></li>
+			<li><a href="#" ><ion-icon name="contact"></ion-icon>&nbsp; Profile</a></li>
+			<li><a href="#" ><ion-icon name="chatboxes"></ion-icon>&nbsp; Inbox</a></li>
+			<li><a href="#"><ion-icon name="build"></ion-icon>&nbsp;Manage   
+          <ion-icon name="arrow-dropdown"></ion-icon></a>
+				<ul>
+					<li><a href="order.html" >Manage Order</a></li>
+					<li ><a href="product.html" >Manage Product</a></li>
+					<li><a href="category.html">Manage Category</a></li>
+				
+				</ul>
+			</li>
+			<li class="active"><a href="staff.html"><ion-icon name="add"></ion-icon>&nbsp;Staff </a></li>
+			<li><a href="member.html"><ion-icon name="settings"></ion-icon>&nbsp;Member</a></li>
+			<li><a href="sales.html"><ion-icon name="folder-open"></ion-icon>&nbsp;Sales Reports</a></li>
+			<li ><a href="#" data-toggle="modal" data-target="#sign-out"><ion-icon name="log-out"></ion-icon>&nbsp;Log out</a></li>
+		</ul>
+	</div>
+	<!-- modal -->
+    <div class="modal fade" id="sign-out">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Want to leave?</h4>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+            Press logout to leave
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-success" data-dismiss="modal">Stay Here</button>
+            <button type="button" class="btn btn-danger" data-dismiss="modal" onclick="location.href='login page.html'"> Logout</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end of modal -->
+	
+	<div class="admin-content">
+		<div class="content">
+			<h2 class="page-title">Manage Staff</h2>
+			
+		    <div class="tab tab-1">
+				<table id="table">
+					<thead>
+						<th>ID</th>
+						<th>Name</th>
+						<th>Portal role</th>
+						<th>Department</th>
+						<th>Phone no.</th>
+						<th>Email</th>
+
+					</thead>
+					
+					<tbody>
+					<tr>
+						<td>001</td>
+						<td>Anna</td>
+						<td>General Manager</td>
+						<td>Management</td>
+						<td>011-4758335</td>
+						<td>anna@gmail.com</td>
+					</tr>
+				
+					<tr>
+						<td>002</td>
+						<td>Moana</td>
+						<td>Manager</td>
+						<td>Management</td>
+						<td>012-6277501</td>
+						<td>moana@gmail.com</td>	
+					</tr>
+					
+					<tr>
+						<td>003</td>
+						<td>Elsa</td>
+						<td>Assistant Manager</td>
+						<td>Management</td>
+						<td>011-9959318</td>
+						<td>elsa@gmail.com</td>
+					</tr>
+				
+					<tr>
+						<td>004</td>
+						<td>Olaf</td>
+						<td>Senior server</td>
+						<td>Service Department</td>
+						<td>012-3457521</td>
+						<td>olaf@gmail.com</td>	
+					</tr>
+					
+					<tr>
+						<td>005</td>
+						<td>Kristoff</td>
+						<td>Server</td>
+						<td>Service Department</td>
+						<td>011-4758618</td>
+						<td>krist@gmail.com</td>
+					</tr>
+				
+					<tr>
+						<td>006</td>
+						<td>Maui</td>
+						<td>Barrista</td>
+						<td>Kitchen Department</td>
+						<td>012-0280521</td>
+						<td>maui@gmail.com</td>	
+					</tr>
+					
+					<tr>
+						<td>007</td>
+						<td>Simba</td>
+						<td>Busser</td>
+						<td>Kitchen Department</td>
+						<td>011-4772818</td>
+						<td>simba@gmail.com</td>
+					</tr>
+				
+					<tr>
+						<td>008</td>
+						<td>Jackfrost</td>
+						<td>Chef</td>
+						<td>Kitchen Department</td>
+						<td>012-6987931</td>
+						<td>frost@gmail.com</td>	
+					</tr>
+					
+					<tr>
+						<td>009</td>
+						<td>Hiro Hamada</td>
+						<td>Line cook</td>
+						<td>Kitchen Department</td>
+						<td>011-4795318</td>
+						<td>hiro@gmail.com</td>
+					</tr>
+				
+					<tr>
+						<td>010</td>
+						<td>Baymax</td>
+						<td>Server</td>
+						<td>Service Department</td>
+						<td>012-8287528</td>
+						<td>max@gmail.com</td>	
+					</tr>
+					
+			
+					</tbody>
+				
+				</table>
+			</div>
+		
+			<div class="container">
+				<div class="tab tab-2">
+					<p>ID:<input type="text" name="id" id="id"></p>
+					<p>Name:<input type="text" name="name" id="name"><p>
+					<p>Portal role<input type="text" name="role" id="role"><p>
+					<p>Department: <select name="dpm" id="dpm">
+										<option value="Management">Management </option>
+										<option value="Service department">Service </option>
+										<option value="Kitchen department">Kitchen </option>
+									 </select></p>
+					<p>Phone no.:<input type="text" name="no" id="no"></p>
+					<p>Email:<input type="text" name="e" id="e"><p>
+								
+					
+						<button onclick="addHtmlTableRow();">Add</button>
+						<button onclick="editHtmlTbleSelectedRow();">Edit</button>
+						<button onclick="removeSelectedRow();">Remove</button>
+					
+				</div>
+				
+			</div>
+	
+	
+	
+	
+	</div>
+	</div>
+	</div>
+	<footer class="footer">
+        <div class="container-fluid">
+          <ul class="nav">
+            <li class="nav-item">
+              <a href="javascript:void(0)" class="nav-link">
+                Creative Tim
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="javascript:void(0)" class="nav-link">
+                About Us
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="javascript:void(0)" class="nav-link">
+                Blog
+              </a>
+            </li>
+          </ul>
+          <div class="copyright">
+            ©
+            <script>
+              document.write(new Date().getFullYear())
+            </script> made with <ion-icon name="heart"></ion-icon> by
+            <a href="javascript:void(0)" target="_blank">Creative Tim</a> for a better web.
+          </div>
+        </div>
+      </footer>
+
+	<script>
+            
+            var rIndex,
+                table = document.getElementById("table");
+            
+            // check the empty input
+            function checkEmptyInput()
+            {
+                var isEmpty = false,
+                    id = document.getElementById("id").value,
+                    name = document.getElementById("name").value,
+                    role = document.getElementById("role").value,
+					dpm = document.getElementById("dpm").value,
+                    no = document.getElementById("no").value,
+                    e = document.getElementById("e").value;
+					
+                if(id === ""){
+                    alert("ID Connot Be Empty");
+                    isEmpty = true;
+                }
+                else if(name === ""){
+                    alert("Name Connot Be Empty");
+                    isEmpty = true;
+                }
+                else if(role === ""){
+                    alert("Portal Role Connot Be Empty");
+                    isEmpty = true;
+                }
+				else if(dpm === ""){
+                    alert("Department Connot Be Empty");
+                    isEmpty = true;
+                }
+                else if(no === ""){
+                    alert("Phone no. Connot Be Empty");
+                    isEmpty = true;
+                }
+				else if(e === ""){
+                    alert("Email Connot Be Empty");
+                    isEmpty = true;
+                }
+                
+                return isEmpty;
+            }
+            
+            // add Row
+            function addHtmlTableRow()
+            {
+                
+                if(!checkEmptyInput()){
+                var newRow = table.insertRow(table.length),
+                    cell1 = newRow.insertCell(0),
+                    cell2 = newRow.insertCell(1),
+                    cell3 = newRow.insertCell(2),
+					cell4 = newRow.insertCell(3),
+                    cell5 = newRow.insertCell(4),
+                    cell6 = newRow.insertCell(5),
+                    id = document.getElementById("id").value,
+                    name = document.getElementById("name").value,
+                    role = document.getElementById("role").value,
+					dpm = document.getElementById("dpm").value,
+                    no = document.getElementById("no").value,
+                    e = document.getElementById("e").value;
+
+            
+                cell1.innerHTML = id;
+                cell2.innerHTML = name;
+                cell3.innerHTML = role;
+				cell4.innerHTML = dpm;
+                cell5.innerHTML = no;
+                cell6.innerHTML = e;
+
+                // call the function to set the event to the new row
+                selectedRowToInput();
+            }
+            }
+            
+            // display selected row data into input text
+            function selectedRowToInput()
+            {
+                
+                for(var i = 1; i < table.rows.length; i++)
+                {
+                    table.rows[i].onclick = function()
+                    {
+                      // get the seected row index
+                      rIndex = this.rowIndex;
+                      document.getElementById("id").value = this.cells[0].innerHTML;
+                      document.getElementById("name").value = this.cells[1].innerHTML;
+                      document.getElementById("role").value = this.cells[2].innerHTML;
+					  document.getElementById("dpm").value = this.cells[3].innerHTML;
+                      document.getElementById("no").value = this.cells[4].innerHTML;
+                      document.getElementById("e").value = this.cells[5].innerHTML;
+					  
+                    };
+                }
+            }
+            selectedRowToInput();
+            
+            function editHtmlTbleSelectedRow()
+            {
+                var id = document.getElementById("id").value,
+                    name = document.getElementById("name").value,
+                    role = document.getElementById("role").value,
+					dpm = document.getElementById("dpm").value,
+                    no = document.getElementById("no").value,
+                    e = document.getElementById("e").value;
+					
+               if(!checkEmptyInput()){
+                table.rows[rIndex].cells[0].innerHTML = id;
+                table.rows[rIndex].cells[1].innerHTML = name;
+                table.rows[rIndex].cells[2].innerHTML = role;
+				table.rows[rIndex].cells[3].innerHTML = dpm;
+                table.rows[rIndex].cells[4].innerHTML = no;
+                table.rows[rIndex].cells[5].innerHTML = e;
+              }
+            }
+            
+            function removeSelectedRow()
+            {
+                table.deleteRow(rIndex);
+                // clear input text
+                document.getElementById("id").value = "";
+                document.getElementById("name").value = "";
+                document.getElementById("role").value = "";
+				document.getElementById("dpm").value = "";
+                document.getElementById("no").value = "";
+                document.getElementById("e").value = "";
+				
+            }
+    </script>

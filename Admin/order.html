@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html>
+<head><title>Order</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+<link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+
+<link rel="stylesheet" href="admin_style.css">
+</head>
+
+<body>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+
+<div class="admin-wrapper">
+	<div class="left-sidebar">
+	<br>
+	
+		<a href="#" class="home-title"> &nbsp;  The Drink House &nbsp;&nbsp;&nbsp;</a>
+		<div class="home-title pb-3">
+		<br>
+                <img src="images/cust4.jpeg" width="50" class="rounded-circle mr-3">
+                <a href="#" class="text-white">Staff member </a>
+        <br>
+		
+		</div>
+		<ul>
+		<br>
+		<br>
+			<li ><a href="admin index.html" ><ion-icon name="home"></ion-icon>&nbsp;  Dashboard</a></li>
+			<li><a href="#" ><ion-icon name="contact"></ion-icon>&nbsp; Profile</a></li>
+			<li><a href="#" ><ion-icon name="chatboxes"></ion-icon>&nbsp; Inbox</a></li>
+			<li><a href="#"><ion-icon name="build"></ion-icon>&nbsp;Manage   
+          <ion-icon name="arrow-dropdown"></ion-icon></a>
+				<ul>
+					<li class="active"><a href="order.html" >Manage Order</a></li>
+					<li><a href="product.html" >Manage Product</a></li>
+					<li><a href="category.html">Manage Category</a></li>
+				
+				</ul>
+			</li>
+			<li><a href="staff.html"><ion-icon name="add"></ion-icon>&nbsp;Staff </a></li>
+			<li><a href="member.html"><ion-icon name="settings"></ion-icon>&nbsp;Member</a></li>
+			<li ><a href="sales.html"><ion-icon name="folder-open"></ion-icon>&nbsp;Sales Reports</a></li>
+			<li ><a href="#" data-toggle="modal" data-target="#sign-out"><ion-icon name="log-out"></ion-icon>&nbsp;Log out</a></li>
+		</ul>
+	</div>
+	
+	<!-- modal -->
+    <div class="modal fade" id="sign-out">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Want to leave?</h4>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+            Press logout to leave
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-success" data-dismiss="modal">Stay Here</button>
+            <button type="button" class="btn btn-danger" data-dismiss="modal" onclick="location.href='login page.html'"> Logout</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end of modal -->
+	<div class="admin-content">
+		<div class="content">
+			<h2 class="page-title">Manage Order</h2>
+			
+		    <div class="tab tab-1">
+				<table id="table">
+					<thead>
+						<th>ID</th>
+						<th>Name</th>
+						<th>Order Date</th>
+						<th>Order Status</th>
+						<th>Payment Status</th>
+						<th>Order Item</th>
+						<th>Category</th>
+					</thead>
+				
+					<tbody>
+					<tr>
+						<td>1</td>
+						<td>Zhu YiLong</td>
+						<td>2020-04-16</td>
+						<td>Pending</td>
+						<td>Authorized</td>
+						<td>Mocha</td>
+						<td>Ice-Cofee</td>
+					</tr>
+				
+					<tr>
+						<td>2</td>
+						<td>Jeon Jung-kook</td>
+						<td>2020-09-01</td>
+						<td>Pending</td>
+						<td>Authorized</td>
+						<td>Mocha</td>
+						<td>Ice-Cofee</td>		
+					</tr>
+					
+					<tr>
+						<td>3</td>
+						<td>Reuben Ang</td>
+						<td>2020-09-24</td>
+						<td>Pending</td>
+						<td>Authorized</td>
+						<td>Mocha</td>
+						<td>Ice-Cofee</td>
+					</tr>
+				
+					<tr>
+						<td>4</td>
+						<td>Shawn Mendes</td>
+						<td>2020-04-16</td>
+						<td>Pending</td>
+						<td>Authorized</td>
+						<td>Mocha</td>
+						<td>Ice-Cofee</td>		
+					</tr>
+					
+					<tr>
+						<td>5</td>
+						<td>Ed Sheeran</td>
+						<td>2020-04-16</td>
+						<td>Pending</td>
+						<td>Authorized</td>
+						<td>Mocha</td>
+						<td>Ice-Cofee</td>
+					</tr>
+				
+					<tr>
+						<td>6</td>
+						<td>Zhou Sheng</td>
+						<td>2020-04-16</td>
+						<td>Pending</td>
+						<td>Authorized</td>
+						<td>Mocha</td>
+						<td>Ice-Cofee</td>		
+					</tr>
+					
+					<tr>
+						<td>7</td>
+						<td>Mohamad Ali</td>
+						<td>2020-04-16</td>
+						<td>Pending</td>
+						<td>Authorized</td>
+						<td>Mocha</td>
+						<td>Ice-Cofee</td>
+					</tr>
+				
+					<tr>
+						<td>8</td>
+						<td>Shila Amzah </td>
+						<td>2020-04-16</td>
+						<td>Pending</td>
+						<td>Authorized</td>
+						<td>Mocha</td>
+						<td>Ice-Cofee</td>		
+					</tr>
+					
+					<tr>
+						<td>9</td>
+						<td>Hua Chen Yu</td>
+						<td>2020-04-16</td>
+						<td>Pending</td>
+						<td>Authorized</td>
+						<td>Mocha</td>
+						<td>Ice-Cofee</td>
+					</tr>
+				
+					<tr>
+						<td>10</td>
+						<td>Shahrukh Khan</td>
+						<td>2020-04-16</td>
+						<td>Pending</td>
+						<td>Authorized</td>
+						<td>Mocha</td>
+						<td>Ice-Cofee</td>		
+					</tr>
+					
+					<tr>
+						<td>11</td>
+						<td>Jackson Wong</td>
+						<td>2020-04-16</td>
+						<td>Pending</td>
+						<td>Authorized</td>
+						<td>Mocha</td>
+						<td>Ice-Cofee</td>		
+					</tr>
+					
+					<tr>
+						<td>12</td>
+						<td>Lalisa Manoban</td>
+						<td>2020-03-27</td>
+						<td>Completed</td>
+						<td>Completed</td>
+						<td>S'mores Custard Cake</td>
+						<td>Dessert</td>
+					</tr>
+				
+					<tr>
+						<td>13</td>
+						<td>Taylor Swift</td>
+						<td>2020-12-13</td>
+						<td>Completed</td>
+						<td>Completed</td>
+						<td>Pomogranate Orange Juice</td>
+						<td>Juice</td>		
+					</tr>
+					
+					<tr>
+						<td>14</td>
+						<td>Seo Ye Ji</td>
+						<td>2020-04-06</td>
+						<td>Completed</td>
+						<td>Completed</td>
+						<td>Americano</td>
+						<td>Cofee</td>
+					</tr>
+				
+					<tr>
+						<td>15</td>
+						<td>Elsa</td>
+						<td>2020-04-03</td>
+						<td>Completed</td>
+						<td>Completed</td>
+						<td>Chocolate Milkshake</td>
+						<td>Cofee</td>		
+					</tr>
+			
+					</tbody>
+				
+				</table>
+			</div>
+		
+			<div class="container">
+				<div class="tab tab-2">
+					<p>ID:<input type="text" name="id" id="id"></p>
+					<p>Name:<input type="text" name="name" id="name"><p>
+					<p>Order Date:<input type="date" name="date" id="date" min="01.01.2020" max="31.12.2020"></p>
+					<p>Order Status: <select name="ostatus" id="ostatus">
+										<option value="Authorized">Authorized </option>
+										<option value="Pending">Pending </option>
+										<option value="Complete">Complete </option>
+										<option value="Cancelled">Cancelled </option>
+									 </select></p>
+									 
+					<p>Payment Status: <select name="pstatus" id="pstatus">
+										<option value="Authorized">Authorized </option>
+										<option value="Pending">Pending </option>
+										<option value="Complete">Complete </option>
+										<option value="Cancelled">Cancelled </option>
+									  </select></p>
+									  
+					<p>Item: <select name="itm" id="itm">
+								<option value="Hemp Milk Hot Chocolate">H.Chocolate </option>
+								<option value="Latte">Latte </option>
+								<option value="Cupoccino">Cappuccino </option>
+								<option value="Espresso">Espresso </option>
+								<option value="Americano">Americano </option>
+								<option value="Mocha">Mocha </option>
+								<option value="Frothy Whipped C.W Russian">C.W Russian </option>
+								<option value="Chocolate Milkshake">Choco.Milkshake </option>
+								<option value="Orange juice">Org juice </option>
+								<option value="Pomogranate Orange Juice">Pomogranate Juice </option>
+								<option value="Watermelon juice">Watermelon juice </option>
+								<option value="Original Milk Tea">Milk Tea </option>
+								<option value="Brown Sugar Dalgona Milk Tea">Dalgona Milk Tea </option>
+								<option value="Coconut Iced Cofee with Boba">Coconut Cofee</option>
+								<option value="Cheese Cake">Cheese Cake </option>
+								<option value="Cup Cake">Cup Cake </option>
+								<option value="Simple Espresso Cake">Espresso Cake </option>
+								<option value="S'mores Custard Cake">Custard Cake </option>
+								<option value="Donut">Donut </option>
+					         </select></p>
+							 
+					<p>Category: <select name="cat" id="cat">
+									<option value="Cofee">Cofee </option>
+									<option value="Juice">Juice </option>
+									<option value="Milk Tea">Milk Tea </option>
+									<option value="Dessert">Dessert </option>
+					            </select></p>
+					
+					<button onclick="addHtmlTableRow();">Add</button>
+					<button onclick="editHtmlTbleSelectedRow();">Edit</button>
+					<button onclick="removeSelectedRow();">Remove</button>
+				</div>
+				
+			</div>
+	
+	
+	
+	
+	</div>
+	</div>
+</div>
+	<footer class="footer">
+        <div class="container-fluid">
+          <ul class="nav">
+            <li class="nav-item">
+              <a href="javascript:void(0)" class="nav-link">
+                Creative Tim
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="javascript:void(0)" class="nav-link">
+                About Us
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="javascript:void(0)" class="nav-link">
+                Blog
+              </a>
+            </li>
+          </ul>
+          <div class="copyright">
+            ©
+            <script>
+              document.write(new Date().getFullYear())
+            </script> made with <ion-icon name="heart"></ion-icon> by
+            <a href="javascript:void(0)" target="_blank">Creative Tim</a> for a better web.
+          </div>
+        </div>
+      </footer>
+
+	<script>
+            
+            var rIndex,
+                table = document.getElementById("table");
+            
+            // check the empty input
+            function checkEmptyInput()
+            {
+                var isEmpty = false,
+                    id = document.getElementById("id").value,
+                    name = document.getElementById("name").value,
+                    date = document.getElementById("date").value,
+					ostatus = document.getElementById("ostatus").value,
+                    pstatus = document.getElementById("pstatus").value,
+                    itm = document.getElementById("itm").value,
+					cat = document.getElementById("cat").value;
+					
+                if(id === ""){
+                    alert("Customer ID Connot Be Empty");
+                    isEmpty = true;
+                }
+                else if(name === ""){
+                    alert("Customer Name Connot Be Empty");
+                    isEmpty = true;
+                }
+                else if(date === ""){
+                    alert("Order Date Connot Be Empty");
+                    isEmpty = true;
+                }
+				else if(ostatus === ""){
+                    alert("Order Status Connot Be Empty");
+                    isEmpty = true;
+                }
+                else if(pstatus === ""){
+                    alert("Payment Status Connot Be Empty");
+                    isEmpty = true;
+                }
+				else if(itm === ""){
+                    alert("Item Connot Be Empty");
+                    isEmpty = true;
+                }
+                else if(cat === ""){
+                    alert("Category Connot Be Empty");
+                    isEmpty = true;
+                }
+                return isEmpty;
+            }
+            
+            // add Row
+            function addHtmlTableRow()
+            {
+                
+                if(!checkEmptyInput()){
+                var newRow = table.insertRow(table.length),
+                    cell1 = newRow.insertCell(0),
+                    cell2 = newRow.insertCell(1),
+                    cell3 = newRow.insertCell(2),
+					cell4 = newRow.insertCell(3),
+                    cell5 = newRow.insertCell(4),
+                    cell6 = newRow.insertCell(5),
+					cell7 = newRow.insertCell(6),
+                    id = document.getElementById("id").value,
+                    name = document.getElementById("name").value,
+                    date = document.getElementById("date").value,
+					ostatus = document.getElementById("ostatus").value,
+                    pstatus = document.getElementById("pstatus").value,
+                    itm = document.getElementById("itm").value,
+					cat = document.getElementById("cat").value;
+            
+                cell1.innerHTML = id;
+                cell2.innerHTML = name;
+                cell3.innerHTML = date;
+				cell4.innerHTML = ostatus;
+                cell5.innerHTML = pstatus;
+                cell6.innerHTML = itm;
+				cell7.innerHTML = cat;
+                // call the function to set the event to the new row
+                selectedRowToInput();
+            }
+            }
+            
+            // display selected row data into input text
+            function selectedRowToInput()
+            {
+                
+                for(var i = 1; i < table.rows.length; i++)
+                {
+                    table.rows[i].onclick = function()
+                    {
+                      // get the seected row index
+                      rIndex = this.rowIndex;
+                      document.getElementById("id").value = this.cells[0].innerHTML;
+                      document.getElementById("name").value = this.cells[1].innerHTML;
+                      document.getElementById("date").value = this.cells[2].innerHTML;
+					  document.getElementById("ostatus").value = this.cells[3].innerHTML;
+                      document.getElementById("pstatus").value = this.cells[4].innerHTML;
+                      document.getElementById("itm").value = this.cells[5].innerHTML;
+					  document.getElementById("cat").value = this.cells[6].innerHTML;
+                    };
+                }
+            }
+            selectedRowToInput();
+            
+            function editHtmlTbleSelectedRow()
+            {
+                var id = document.getElementById("id").value,
+                    name = document.getElementById("name").value,
+                    date = document.getElementById("date").value,
+					ostatus = document.getElementById("ostatus").value,
+                    pstatus = document.getElementById("pstatus").value,
+                    itm = document.getElementById("itm").value,
+					cat = document.getElementById("cat").value;
+					
+               if(!checkEmptyInput()){
+                table.rows[rIndex].cells[0].innerHTML = id;
+                table.rows[rIndex].cells[1].innerHTML = name;
+                table.rows[rIndex].cells[2].innerHTML = date;
+				table.rows[rIndex].cells[3].innerHTML = ostatus;
+                table.rows[rIndex].cells[4].innerHTML = pstatus;
+                table.rows[rIndex].cells[5].innerHTML = itm;
+				table.rows[rIndex].cells[6].innerHTML = cat;
+              }
+            }
+            
+            function removeSelectedRow()
+            {
+                table.deleteRow(rIndex);
+                // clear input text
+                document.getElementById("id").value = "";
+                document.getElementById("name").value = "";
+                document.getElementById("date").value = "";
+				document.getElementById("ostatus").value = "";
+                document.getElementById("pstatus").value = "";
+                document.getElementById("itm").value = "";
+				document.getElementById("cat").value = "";
+            }
+    </script>
+	
+	
+
+            
+       
+	
+
+
+
+</body>
+</html>

@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html>
+<head><title>Category</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+<link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+
+<link rel="stylesheet" href="admin_style.css">
+</head>
+
+<body>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+
+<div class="admin-wrapper">
+	<div class="left-sidebar">
+	<br>
+	
+		<a href="#" class="home-title"> &nbsp;  The Drink House &nbsp;&nbsp;&nbsp;</a>
+		<div class="home-title pb-3">
+		<br>
+                <img src="images/cust4.jpeg" width="50" class="rounded-circle mr-3">
+                <a href="#" class="text-white">Staff member </a>
+        <br>
+		
+		</div>
+		<ul>
+		<br>
+		<br>
+			<li ><a href="admin index.html" ><ion-icon name="home"></ion-icon>&nbsp;  Dashboard</a></li>
+			<li><a href="#" ><ion-icon name="contact"></ion-icon>&nbsp; Profile</a></li>
+			<li><a href="#" ><ion-icon name="chatboxes"></ion-icon>&nbsp; Inbox</a></li>
+			<li><a href="#"><ion-icon name="build"></ion-icon>&nbsp;Manage   
+          <ion-icon name="arrow-dropdown"></ion-icon></a>
+				<ul>
+					<li><a href="order.html" >Manage Order</a></li>
+					<li><a href="product.html" >Manage Product</a></li>
+					<li class="active"><a href="category.html">Manage Category</a></li>
+				
+				</ul>
+			</li>
+			<li><a href="staff.html"><ion-icon name="add"></ion-icon>&nbsp;Staff </a></li>
+			<li><a href="member.html"><ion-icon name="settings"></ion-icon>&nbsp;Member</a></li>
+			<li><a href="sales.html"><ion-icon name="folder-open"></ion-icon>&nbsp;Sales Reports</a></li>
+			<li ><a href="#" data-toggle="modal" data-target="#sign-out"><ion-icon name="log-out"></ion-icon>&nbsp;Log out</a></li>
+		</ul>
+	</div>
+	<!-- modal -->
+    <div class="modal fade" id="sign-out">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Want to leave?</h4>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+            Press logout to leave
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-success" data-dismiss="modal">Stay Here</button>
+            <button type="button" class="btn btn-danger" data-dismiss="modal" onclick="location.href='login page.html'"> Logout</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end of modal -->
+	
+	<div class="admin-content">
+		<div class="content">
+			<h2 class="page-title">Manage Product Category</h2>
+			
+		    <div class="tab tab-1">
+				<table id="table">
+					<thead>
+						<th>Code</th>
+						<th>Product Name</th>
+						<th>Category</th>
+					</thead>
+					
+					<tbody>
+					<tr>
+						<td>101</td>
+						<td>Hemp Milk Hot Chocolate</td>
+						<td>Cofee</td>
+					</tr>
+				
+					<tr>
+						<td>102</td>
+						<td>Creamy Cashew Gingersnap Latte</td>
+						<td>Cofee</td>	
+					</tr>
+					
+					<tr>
+						<td>103</td>
+						<td>Cappoccino</td>
+						<td>Cofee</td>
+					</tr>
+				
+					<tr>
+						<td>104</td>
+						<td>Espresso</td>
+						<td>Cofee</td>
+					</tr>
+					
+					<tr>
+						<td>105</td>
+						<td>Americano</td>
+						<td>Cofee</td>
+					</tr>
+				
+					<tr>
+						<td>106</td>
+						<td>Mocha</td>
+						<td>Cofee</td>	
+					</tr>
+					
+					<tr>
+						<td>107</td>
+						<td>Frothy Whipped Cofee White Russian</td>
+						<td>Cofee</td>
+					</tr>
+				
+					<tr>
+						<td>108</td>
+						<td>Chocolate Milkshake</td>
+						<td>Cofee</td>	
+					</tr>
+					
+					<tr>
+						<td>109</td>
+						<td>Orange juice</td>
+						<td>Juice</td>
+					</tr>
+				
+					<tr>
+						<td>110</td>
+						<td>Pomegranate orange juice</td>
+						<td>Juice</td>	
+					</tr>
+					
+					<tr>
+						<td>111</td>
+						<td>Watermelon juice</td>
+						<td>Juice</td>
+					</tr>
+				
+					<tr>
+						<td>112</td>
+						<td>Original Milk Tea</td>
+						<td>Milk Tea</td>
+					</tr>
+					
+					<tr>
+						<td>113</td>
+						<td>Coconut Iced Cofee with boba</td>
+						<td>Milk Tea</td>	
+					</tr>
+					
+					<tr>
+						<td>114</td>
+						<td>Brown Sugar Dalgona Milk Tea</td>
+						<td>Milk Tea</td>	
+					</tr>
+					
+					<tr>
+						<td>115</td>
+						<td>Cheese Cake</td>
+						<td>Dessert</td>		
+					</tr>
+					
+					<tr>
+						<td>116</td>
+						<td>Cup Cake</td>
+						<td>Dessert</td>	
+					</tr>
+					
+					<tr>
+						<td>117</td>
+						<td>Simple Espresso Cake</td>
+						<td>Dessert</td>	
+					</tr>
+					
+					<tr>
+						<td>118</td>
+						<td>S'mores Custard Cake</td>
+						<td>Dessert</td>		
+					</tr>
+					
+					<tr>
+						<td>119</td>
+						<td>Donut</td>
+						<td>Dessert</td>	
+					</tr>
+					
+					</tbody>
+				
+				</table>
+			</div>
+		
+			<div class="container">
+				<div class="tab tab-2">
+					<p>Code:<input type="text" name="c" id="c"></p>
+					<p>Poduct Name:<input type="text" name="pro" id="pro"><p>
+					<p>Category: <select name="procat" id="procat">
+									<option value="Cofee">Cofee </option>
+									<option value="Juice">Juice </option>
+									<option value="Milk Tea">Milk Tea </option>
+									<option value="Dessert">Dessert </option>
+					            </select></p>
+					
+					<button onclick="addHtmlTableRow();">Add</button>
+					<button onclick="editHtmlTbleSelectedRow();">Edit</button>
+					<button onclick="removeSelectedRow();">Remove</button>
+				</div>
+				
+			</div>
+	
+	
+	
+	
+		</div>
+	</div>
+	</div>
+	</div>
+	<footer class="footer">
+        <div class="container-fluid">
+          <ul class="nav">
+            <li class="nav-item">
+              <a href="javascript:void(0)" class="nav-link">
+                Creative Tim
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="javascript:void(0)" class="nav-link">
+                About Us
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="javascript:void(0)" class="nav-link">
+                Blog
+              </a>
+            </li>
+          </ul>
+          <div class="copyright">
+            ©
+            <script>
+              document.write(new Date().getFullYear())
+            </script> made with <ion-icon name="heart"></ion-icon> by
+            <a href="javascript:void(0)" target="_blank">Creative Tim</a> for a better web.
+          </div>
+        </div>
+      </footer>
+
+	<script>
+            
+            var rIndex,
+                table = document.getElementById("table");
+            
+            // check the empty input
+            function checkEmptyInput()
+            {
+                var isEmpty = false,
+                    id = document.getElementById("c").value,
+                    pro = document.getElementById("pro").value,
+					procat = document.getElementById("procat").value;
+                    
+                if(c === ""){
+                    alert("Code Connot Be Empty");
+                    isEmpty = true;
+                }
+                else if(pro === ""){
+                    alert("Product Name Connot Be Empty");
+                    isEmpty = true;
+                }
+             
+				else if(procat === ""){
+                    alert("Category Connot Be Empty");
+                    isEmpty = true;
+                }
+
+				
+                return isEmpty;
+            }
+            
+            // add Row
+            function addHtmlTableRow()
+            {
+                
+                if(!checkEmptyInput()){
+                var newRow = table.insertRow(table.length),
+                    cell1 = newRow.insertCell(0),
+                    cell2 = newRow.insertCell(1),
+                    cell3 = newRow.insertCell(2),
+					
+                    c = document.getElementById("c").value,
+                    pro = document.getElementById("pro").value,
+					procat = document.getElementById("procat").value;
+
+                    
+                cell1.innerHTML = c;
+                cell2.innerHTML = pro;
+				cell3.innerHTML = procat;
+               
+                // call the function to set the event to the new row
+                selectedRowToInput();
+            }
+            }
+            
+            // display selected row data into input text
+            function selectedRowToInput()
+            {
+                
+                for(var i = 1; i < table.rows.length; i++)
+                {
+                    table.rows[i].onclick = function()
+                    {
+                      // get the seected row index
+                      rIndex = this.rowIndex;
+                      document.getElementById("c").value = this.cells[0].innerHTML;
+                      document.getElementById("pro").value = this.cells[1].innerHTML;
+					  document.getElementById("procat").value = this.cells[2].innerHTML;
+                      
+                    };
+                }
+            }
+            selectedRowToInput();
+            
+            function editHtmlTbleSelectedRow()
+            {
+                var c = document.getElementById("c").value,
+                    pro = document.getElementById("pro").value,
+					procat = document.getElementById("procat").value;
+
+               if(!checkEmptyInput()){
+                table.rows[rIndex].cells[0].innerHTML = c;
+                table.rows[rIndex].cells[1].innerHTML = pro;
+                table.rows[rIndex].cells[2].innerHTML = procat;
+
+              }
+            }
+            
+            function removeSelectedRow()
+            {
+                table.deleteRow(rIndex);
+                // clear input text
+                document.getElementById("c").value = "";
+                document.getElementById("pro").value = "";
+				document.getElementById("procat").value = "";
+
+            }
+    </script>
+	
+</body>
+</html>
